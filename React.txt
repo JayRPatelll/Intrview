@@ -1,0 +1,154 @@
+-React is javascript library.
+- React is used for building UI.
+- React simplifies the creation of single page application by using reusable component.
+
+- single page application have only one single page.
+- content is dynamically updated without refreshing or loading a new page.
+
+Advantages of React:
+1. Simple to build single page application by using components.\
+2. React is cross platform and open source.
+3. Lightweight and very fast.
+4. Testing is easy.
+
+React and Angular:
+1. React is a javascript library.    1. Angular is a framework.
+2. React uses a virtual DOM which makes it faster.      2.  Angular uses a real DOM.
+3. React is faster than Angular.
+
+DOM (Document object Model) which allows javascript to dynamically access and manipulate the content.
+
+React uses a virtual DOM to efficiently update the UI without re-render the entire page,
+it only updates an element inside dom, which helps improve performance and make the 
+application more responsive.
+
+- React follows component based architecture.
+
+- In React, a component is a reusable building block for 
+creating user interfaces.
+
+----folder structure.
+
+NPM and npm_modules folder:
+- npm is used to manage the dependencies for your react project, including the react library itself.
+- npm_modules folder contains all the dependencies of the project, including React library.
+
+Public folder:
+-contains all staic assets.
+
+Src folder:
+- all source code of application.
+
+index.html page in React:
+- This file is entry point of an application.
+
+App.js file :
+- this is top/main/root level component in React application and 
+it is responsible for all other component.
+
+In react function is a javascript function that returns react element.
+
+-export default in App.js:
+- it is used to make this app component available for import using import statement
+in other file.
+
+
+- index.js file is JS file which renders all the components and replace the root element of index.html file
+with the newly rendered root element.s
+- ReactDOM is a javascript library which convert your components to the actual browser DOM.
+- Render method: 
+
+JSX :
+
+- JavaScript XML is a syntax extention used by react to write HTML like code.
+
+Advantages of JSX:
+1. improve code readability
+2. error checking in advance (Type safety)
+3. Support JavaScript expressions.
+4. improved performance.
+5. code reusability.
+
+JSX code is converted into JS by Babel library.
+
+map() method allows you to iterate over an array and modify its elements
+using a callback function.
+
+Props are a way to pass data from a parent component to a child component.
+
+Types of Components:
+
+1. Functional components : Declared as a javascript function. They are stateless components but with the help of 
+ hooks they can now manage state also.
+
+2. Class components : 
+
+How do you pass data between functional components in React ?
+- Props are a way to pass data from a parent component to a child component.
+
+What is prop drilling ?
+- process of passing down props through multiple layers of components. parent compo --> child comp --> grand child comp
+
+why to avoid Prop Drilling?
+1. Maintenance : which make code harder to maintain as changes in data flow require updates
+across multiple components.
+2. complexity: increase code complexity and reduces code readability.
+3. debugging : becomes challenging.
+
+Class Components :
+- Defined using JavaScript Classes.
+- they are stateful components by using lifecycle method.
+- render method in a class components is responsible for returning JSX.
+
+How to pass data between class comp ?
+- this.props can be used in child component to access data passed from parent component.
+
+this keyword is used to refer to the instance of class.
+
+
+Differences between functional and class components ?
+     functional comp                                                 class comp
+
+1. Defined as JS function.				1. defined as JS class.
+2. Stateless but can now maintain state 		2. can manage state with this.state
+using hooks.
+3. No lifecycle method					3. yes
+4. more readable and concise.				4. complex
+5. do not have render method 				5. render method
+
+Routing and Router in React ?
+- Routing allows you to create a single page web application with navigation,
+without the need for a full-page refresh.
+- Router is a library for handling routing and enables navigation and rendering of 
+different components based on the URL.
+
+command to install router :
+- npm install react-router-dom
+
+import {Routes, Route, Link} from "react-router-dom";
+
+<Link to="/about"> About </Link>
+
+<Routes>
+	<Route path="/about" element={<About/ >} />
+</Routes>
+
+step 1: Install React Router
+step 2: Create Navigation
+step 3: Create Routes
+
+What are the roles of <Routes> & <Route> in react routing ?
+- The <Routes> component is used as the root container fro declaring your 
+collection of routes.
+- The <Route> component is used to define a route and specify the component
+that should render when the route matches.
+
+Route parameter in react router are a way to pass dynamic values
+to the component as part of the URL path.
+
+<Route path="/users/:userId" component={UserProfile} />
+
+
+
+
+

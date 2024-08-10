@@ -1,0 +1,33 @@
+Java is a high level language and OOPL.
+
+High level language  ---> Byte code  ---> Low Level language.
+
+
+Java Compiler (JDK tool)   JDK ---> JRE ----> JVM
+ - Java code to bytecode.
+ - JRE is inside JDK.
+ - .Java file to .class file by JRE
+ - JRE contains JVM and Java Libraries.
+ - JVM converts bytecode(.class) to machine code.
+
+
+Compile Time is a phase during which the Java Source code is
+translated into bytecode by the Java Compiler (javac).
+
+Runtime which the Java Virtual Machine executes the compiled bytecode.
+
+Primitive Data Type : Int, Float, Boolean, byte, short, long, double, char
+ - primitive data type which directly stores values in memory.
+ - Stored in stack memory
+
+Reference Data Type(Non Primi) - String, Array
+- which do not store the data directly, but instead store references(heap memory) to
+  values in memory.
+- stored in heap memory
+
+Ternary Operator 
+- String result = (x > y) ? "A" : "B";
+
+
+
+

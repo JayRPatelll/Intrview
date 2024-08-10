@@ -1,0 +1,156 @@
+throw and throw ex 
+
+where throw is giving more details in stack trace 
+throw ex gives less details than throw 
+
+
+public static void main(string[] args){
+
+int i =0;
+
+while(i < 5){
+console.writeline(i);
+i++;
+}
+
+}
+
+
+int[] array = new int[] {1,1,1,1,1};
+
+foreach(int i in array){
+console.writline(i);
+}
+
+
+using is used to dispose the object so no need to dispose the object by manually and it is mainly used in database connection 
+
+
+
+boxing and unboxing 
+boxing = convert value type into reference type.
+
+unboxing reverse process
+
+string is immutable so you can not modify once it is created 
+every time you will assign it will create new string 
+
+String occupy different memory in process
+StringBuilder occupy same memory in process
+
+code and build project create assembly .dll or exe
+bin folder
+.Net framework convert it into assembly
+
+Garbage Collection all unused object will be realesed and free the space 
+
+Serialization = convert class object into bytes mainly used in Web API to convert Class object into JSON string.
+
+string JsonData = JsonConvert.SerializeObject(obj);
+Response.write(JsonData);
+
+-------------------------------
+
+DBMS stores data in file.... XML
+RDBMS stores data in tabular form.  ....  MySQL,SQL server, Oracle
+
+Normalization is not present.
+Normalization is present.
+
+Constraints are used to limit the type of data that can go into table.
+
+Primary Key  ---- Unique identify each row.
+Not NULL ---- Not null field
+Foreign Key   --- Field which can identify each row in another table.
+CHECK --- to validate the column value like age>18.
+Default  --- GETDATE() which will automatically take value.
+
+
+Primary key can't accept null.
+Unique key can accept only one null value.
+
+PK creates clustered index.
+UK creates non-clustered index.
+
+PK only one PK in Table.
+More than one UK in table.
+
+
+A View is a virtual table whhich consist of a subset of data contained in a table or more than one table.
+
+create view india-customer as
+select custName,ContactName
+from Customers
+where country = 'india'.
+
+View are not stored in a memory. Query is stored but data is never stored in a table.
+Indexed views to improve the performance.
+DBA can hide the actual table name and expose views for read operations.
+
+select lastname, firstname
+from employees where officeCode in (select officecode from offices where country = 'USA')
+
+Left Outer Join - It returns all data from left table and matching data from the two tables.
+Right Outer Join - It returns all data from right table and matching data from the left table.
+
+Inner Join - matching records from two tables.
+
+A self join is a join of a table itself.
+employeeid and managerid in same table...
+
+select e.first_name as employee
+m.first_name as manager
+from 
+employee e self join
+employee m
+ON m.employee_id = e.employee_id
+order by manager;
+
+Stored Procedure and Functions-
+
+-SP may or may not return a value but function must return a value.
+-SP can have input/output parameters but function only has input parameters
+- We can call function inside SP but can't call SP from functions.
+- we can't use SP in SQL statements like select,insert, update delete etc. but we can use them with function.
+
+ex. select *, dbo.fnCountry(city.long) from city.
+- use try-catch in Sp but can't use in function.
+
+create procedures proc_name
+(@Ename varchar(50), @EId int output)
+as begin
+ insert into Employee (EmpName) values (@Ename)
+ select @Eid = SCOPE_Identity()
+
+End
+
+---- Function----
+
+create function func_name (param)
+
+return data_type as 
+begin
+
+sql statements
+return value;
+
+end
+
+
+SQL Indexes are used in relational databases to retrieve data very fast.
+Where the data position is right now.
+
+Clustered index defines the order in which data is physically stored in a table.
+There can be only one clustered index per table.
+
+In sql server, if you set a primary key on a column then it will automatically creates a 
+clustered index on that column.
+
+Non-Clustered index is stored at one place and table data is stored in another place.
+So, this index is not physically stored.
+A table can have multiple non-clustered index in a table.
+
+Clustered index is faster.
+
+Where clause is used before GROUP BY clause.
+Having clause is used after GROUP BY clause.

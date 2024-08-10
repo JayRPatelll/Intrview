@@ -1,0 +1,76 @@
+1. VPC (Virtual Private Cloud) creation.
+- first create VPC
+- create subnet
+- configure route table
+- you can monitor through CloudWatch.
+
+2. IAM (Identity and Access Management)
+
+3. CodePipeline
+- use AWS secret manager to store API keys and password securly.
+
+4. Name some AWS services which is not region specific.
+- IAM, Amazon route 53, AWS cloudfront
+
+5. Differences between Amazon EC2 and AWS lambda.
+- both are compute services in aws.
+- Amazon EC2 provides virtual servers that you manage, while AWS lambda 
+  runs code in response to events and scales automatically.
+- choose ec2 for long-running tasks or when you need more control over the environment.
+example : hosting a website with specific software requirements or running a database server.
+- choose lambda for event driven, short-lived task with automatic scaling.
+- Example: processing event-driven actions such as file uploads, database updates and API requests.
+
+6. cloudFormation 
+- is a service which lets you create resources like ec2, s3, RDS and many. So 
+it's an infrastructure as code service.
+
+7. Database sever should be launched into private subnets.
+which enhanced security by restricting direct access from the internet.
+
+8. Database services in AWS.
+- Document DB - Mongodb compatible.
+- DynamoDb - No SQL database 
+- ElastiCashe
+- RDS -Relationl Databse service.(sql server, mysql)
+
+9. Auto scaling automatically adjust the number of instances in a group based on demand.
+It can be implemented in AWS using services like Auto Scaling groups, which dynamically adjust 
+capacity to maintain performance and reduce cost.
+
+10. Vertical Scaling : Increasing or decreasing the resources of an instance, such as CPU or RAM.
+
+Horizontal scaling : Increase in number of machines.
+
+11. Different AWS services to manage COST.
+
+Cloud Financial Services -> Billing and Cost Management -> AWS budgets, AWS cost and reports
+
+12. NAT Gateway vs NAT Instances
+- NAT Gateway whivh managed by AWS, high performance, and availability, no administration needed.
+- NAT Instance is user managed EC2 instances requires manual scaling and administration.
+
+13. Ways to access AWS services.
+- AWS management console, AWS command line, SDK, AWS cloudFormation.
+
+14. Different type of load balancer :
+- Application Load Balancer : for HTTP/HTTPS traffic and modern web applications with multiple services or APIs.
+- Network Load Balancer : for TCP/UDP traffic such as gaming or real time communication.
+- Gateway Load Balancer : Routes traffices to virtual private network.
+
+15. How do you allow or restric access to AWS services?
+- IAM (Identity and Access Management.)
+- NACLs (Network Access Control lists)
+
+16. in AWS instance is called as SERVER.
+- AMI (Amazon machine Image)
+
+17. Process of Setting up a CI/CD pipeline in AWS using Codepipeline and CodeBuild.
+- the process involves defining stages (source, build, test, deploy)
+
+18. Deploy docker containers using Amazon Elastic Container Services.
+
+19. Your company wants to migrate its on-premises infrastructure to AWS for cost saving and scalibility.
+what are the steps. ?
+- steps include accesing current infrastructure, selecting migration strategy(lift and shift, replatforming),
+estimating costs, planning for data migration, testing, and executing the migration with minimal downtime.

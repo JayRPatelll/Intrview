@@ -1,0 +1,115 @@
+OOPS 
+
+Inheritance
+
+- it is creating a parent-child relationship between two classes where child class
+will automatically get the properties and methods of the parents.
+
+- Inheritance is good for code reusability and abstraction of code.
+
+How to prevent class from being Inherited ?
+- By writing 'sealed' in base class.
+
+Single inheritance 
+
+Multiple Inheritance - 2 Base class and 1 Derived Achieved by Interface
+
+Multilevel Inheritance - 1 grand parent, parent and child
+
+Hirerarchical - 1 base class and multiple child class.
+
+Polymorphisam is the ability of a variable, object or function to take on multiple forms.
+
+Function with same function name but different forms is called method Overloading(compile time).
+
+
+
+Encapsulation means wrapping of data, methods and properties into a single unit.
+
+Method Overloading is a type of polymorphism in which we can create multiple methods of the same name 
+in the same class, and all methods works in different ways.
+
+Mthod Overriding is having method with the same name and signature but in different classes.
+
+Method Overloading will not use such keywords.
+Method Overriding uses Virtual Keyword in base class method and OVERride keyword in derived class method.
+
+Method Overloading doesn't need Inheritance.
+MOverriding needs Inheritance. it is not possible in same class.
+
+----- Abstraction and Interface -------------
+Abstract class contain both declaration and definition of method.
+Interface contains only declaration of methods.
+
+Abstract class can contain methods, fields, constructor and other class members.
+Interface contains methods only.
+
+Abstract class does not support Multiple Inheritance.
+Interface support Multiple Inheritance.
+
+
+------- Why and when ----------
+Abstract class is a good choice when you are sure some methods are concrete/defined 
+and must be implemented in the same way in all derived class.
+
+An interface is a good choice when you know a method has to be there, but it can be implemented
+differently by independent derived class
+
+We prefer Interface because it gives flexibility to modify the behaviour at later stage.
+
+Nullable<int> i = null and int? i = null;
+
+
+We can write multiple catch blocks but only one out of them will execute.
+
+Finally block will be executed Irrespective of exception.
+
+We can have only try block without catch block but we have to have finally block then.
+
+Continue statement is used to skip the remaining statements inside the loop and transfers 
+the controls to the beginning of the loop.
+
+Break statement breaks the loop. It makes the control of the program to exit the loop.
+
+Array is Strongly typed.This means that an array can store only specific type of elements.
+ArrayList can store any type of elements.
+
+Array can contain fixed number of items.
+ArrayList can store any number of items.
+
+Constructor is a special method of a class that is automatically called when an instance of 
+a class is created.
+Name of a constructor is same as class name.
+Default constructor
+Parameterized constructor
+
+This keyword is used to refer to the current instance of the class.
+
+Static is a class which object can not be created and which can not be inherited.
+
+Using Keyword.....
+1. Using directive. Using System.io
+2. Using statements ensures that Dispose() method of the class object is called 
+even if an exception occurs. Mostly used in database connections.
+
+An ENUM is  special ::class :: that represents a group of constants.
+
+The Garbage Collactor manages the allocation and release of memory.
+
+A process is an execution of specific program.
+A thread is the smallest unit of process that can be performed in an OS.
+
+
+------------- Web API ---------------------------------------
+Response code in WEB API
+1XX - Informational --> Communicates transfer protocol-level information.
+
+2XX - Success  --> Indicates that the client's request was accepted successfully.
+
+3XX - Redirectional  --> This means request is not complete. The client must
+                          take some additional action in order to complete their request.
+
+4XX - Client Error ---> There is some error in API code.
+
+5XX - Server Error   --> This means the error is not due to web api code
+                       but due to some environment setting.
